@@ -6,9 +6,8 @@ from selenium.webdriver.firefox.options import Options
 options = Options()
 options.headless = True
 import urllib
-profile = webdriver.FirefoxProfile("3js2pbup.default")
-driver = webdriver.Firefox(profile,options=options)
-driver2 = webdriver.Firefox(profile,options=options)
+driver = webdriver.Firefox(options=options)
+driver2 = webdriver.Firefox(options=options)
 pageNumber = 0
 totalPageCount = 0
 movies = {}
