@@ -36,7 +36,7 @@ def collectListPageData():
     global moviesCount
     global totalPageCount
     global pageNumber
-    time.sleep(0.4)
+    time.sleep(1)
     movieList = driver.find_elements_by_xpath("//div[@class='movie-detail']")
     for m in movieList:
         movieTitleTurkish = m.find_element_by_xpath("div[@class='title left']/a").text
